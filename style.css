@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*,
+*:focus{outline: none;}
+
+.form{
+	width: 500px;
+	margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+	margin-top: 15px;
+	background: #fff;
+}
+.form-item{
+	position: relative;
+	margin-bottom: 30px;
+}
+.form-item input{
+	display: block;
+	width: 400px;
+	height: 40px;
+	background: transparent;
+	border: solid 1px #000;
+	transition: all .3s ease;
+	padding: 0 15px;
+}
+.form-item input:focus{
+	border-color: #000;
+}
+.form-item label{
+	position: absolute;
+	cursor: text;
+	z-index: 2;
+	top: 13px;
+	left: 10px;
+	font-size: 12px;
+	font-weight: bold;
+  	background: #fff;
+	padding: 0 10px;
+	color: #999;
+	transition: all .3s ease;
+}
+.form-item input:focus + label,
+.form-item input:valid + label{
+	font-size: 11px;
+	top: -5px;
+}
+.form-item input:focus + label{
+	color: #000
+}
+.btn{
+  padding: 7px 20px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  outline: none;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  border: none;
+  cursor: pointer !important;
+  text-decoration: none;
+  list-style: none;
+  margin-left: 10px;
+  background-color: #000;
+  color: #fff;
+}
